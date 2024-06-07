@@ -1,70 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expo-Kinal</title>
-</head>
-    <img src="picture.png" alt="Logo Kinal" style="float: right;">
     <style>
-    h1{
-    color: rgb(32, 32, 198);
-    text-align: center;
-    margin: 0;
-    text-decoration: underline;
-    text-decoration-color: red;
-}
-h2{
-    color: rgba(0, 0, 255, 0.714);
-    text-decoration: underline;
-    text-decoration-color: red;
-    text-align: center;
-}
-h3{
-    color: rgb(0, 204, 255);
-    text-decoration: underline;
-    text-decoration-color: red;
-    text-align: center;
-}
-p{
-    text-align: center;
-}        
+        h1 {
+            color: rgb(32, 32, 198);
+            text-align: center;
+            margin: 0;
+            text-decoration: underline;
+            text-decoration-color: red;
+        }
+        h2 {
+            color: rgba(0, 0, 255, 0.714);
+            text-decoration: underline;
+            text-decoration-color: red;
+            text-align: center;
+        }
+        h3 {
+            color: rgb(0, 204, 255);
+            text-decoration: underline;
+            text-decoration-color: red;
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+        .table-of-contents {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .table-of-contents h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .table-of-contents ol {
+            list-style: decimal;
+            padding-left: 20px;
+        }
+        .table-of-contents li {
+            margin-bottom: 5px;
+        }
+        .table-of-contents ol ol {
+            list-style: lower-alpha;
+            padding-left: 20px;
+        }
+        .table-of-contents a {
+            text-decoration: none;
+            color: #0066cc;
+        }
+        .table-of-contents a:hover {
+            text-decoration: underline;
+        }
     </style>
+</head>
 <body>
-    <h1>REDES</h1 >
+    <img src="picture.png" alt="Logo Kinal" style="float: right;">
+    
+    <div class="table-of-contents">
+        <h2>Contenidos del artículo</h2>
+        <ol>
+            <li><a href="#redes">REDES</a>
+                <ol>
+                    <li><a href="#componentes">Componentes de red</a>
+                        <ol>
+                            <li><a href="#roles">Roles</a></li>
+                            <li><a href="#punto-a-punto">Punto a Punto</a></li>
+                            <li><a href="#dispositivos-finales">Dispositivos finales</a></li>
+                            <li><a href="#dispositivos-intermedios">Dispositivos de red intermedios</a></li>
+                            <li><a href="#medios">Medios</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="#topologias">Topologías</a>
+                        <ol>
+                            <li><a href="#representaciones">Representaciones de red</a></li>
+                            <li><a href="#diagramas">Diagramas de topología</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="#tipos">Tipos de redes</a></li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+
+    <h1 id="redes">REDES</h1>
     <h2>Roles , Tipos, Medios, Topologias</h2>
     <p>En la era digital actual, las redes de internet han evolucionado para convertirse en una parte esencial de nuestras vidas.
-     Según estudios recientes, más del 60% de la población mundial tiene acceso a internet, lo que equivale a aproximadamente 
+    Según estudios recientes, más del 60% de la población mundial tiene acceso a internet, lo que equivale a aproximadamente 
     4.9 mil millones de personas conectadas. Este número sigue creciendo a medida que las tecnologías de redes avanzan y se vuelven más accesibles en regiones remotas.
     Estos dispositivos abarcan desde electrodomésticos inteligentes hasta sensores industriales, todos interconectados a través de redes de internet robustas y seguras, 
     la importancia y el impacto de las redes de internet en nuestra vida diaria.</p>
-    <h2>Componentes de red
-        
-        <h3>Roles</h3>
-        <p>Cada computadora en una red se llama host o dispositivo final.
-            Los servidores son computadoras que proporcionan información a dispositivos finales:
-            </p>
-        <p>*Servidores de correo electrónico.</p>
-        <p>*Servidores web.</p>    
-        <p>*Servidores de archivos.</p>    
-        <p>Los clientes son equipos que envían solicitudes a los servidores para recuperar información</p>  
-        <p>*Página web desde un servidor web.</p>  
-        <p>*Correo electrónico desde un servidor de correo electrónico.</p>
-          <img src="Roles Host.png">
-    </h2>
-      
-    <h3>Punto a Punto</h3>
+    
+    <h2 id="componentes">Componentes de red</h2>
+    <h3 id="roles">Roles</h3>
+    <p>Cada computadora en una red se llama host o dispositivo final.
+        Los servidores son computadoras que proporcionan información a dispositivos finales:
+        </p>
+    <p>*Servidores de correo electrónico.</p>
+    <p>*Servidores web.</p>    
+    <p>*Servidores de archivos.</p>    
+    <p>Los clientes son equipos que envían solicitudes a los servidores para recuperar información</p>  
+    <p>*Página web desde un servidor web.</p>  
+    <p>*Correo electrónico desde un servidor de correo electrónico.</p>
+    <img src="Roles Host.png">
+
+    <h3 id="punto-a-punto">Punto a Punto</h3>
     <p>Es posible que un dispositivo sea un cliente y un servidor en una red Punto a Punto. Este tipo
         de diseño de red solo se recomienda para redes muy pequeñas. </p>
     <img src="Punto a Punto.png">
     <img src="Ventajas y Desventajas.png">
      
-     <h3>Dispositivos finales</h3>
-     <p>Un terminal es el punto donde un mensaje se origina o se recibe. Los datos se originan con un 
+    <h3 id="dispositivos-finales">Dispositivos finales</h3>
+    <p>Un terminal es el punto donde un mensaje se origina o se recibe. Los datos se originan con un 
         dispositivo final, fluyen por la red y llegan a un dispositivo final.</p> 
     <img src="Lan y Internetwork.png">
     
-    <h3>Dispositivos de red intermedios</h3>
+    <h3 id="dispositivos-intermedios">Dispositivos de red intermedios</h3>
     <p>Un dispositivo intermediario interconecta dispositivos finales. Los ejemplos
     incluyen switches, puntos de acceso inalámbrico, routers y firewalls.La gestión de los 
     datos a medida que fluyen a través de una red también es la función de un dispositivo intermediario, 
@@ -74,33 +130,32 @@ p{
     <p>*Notificar a otros dispositivos los errores y las fallas de comunicación.</p>         
     <img src="Dispositivos de red.png">
     
-    <h3> Medios </h3>
+    <h3 id="medios">Medios</h3>
     <p>La comunicación a través de una red se efectúa a través de un medio que permite que un mensaje viaje desde el origen hacia el destino. </p>
     <img src="Tipos de medios.png">
     <img src="cables.png" >
-    <h2>Topologias
-    <h3>Representaciones de red</h3>
-     <p>Los diagramas de red, con frecuencia, denominados diagramas de topología, utilizan símbolos para representar los 
+
+    <h2 id="topologias">Topologías</h2>
+    <h3 id="representaciones">Representaciones de red</h3>
+    <p>Los diagramas de red, con frecuencia, denominados diagramas de topología, utilizan símbolos para representar los 
          dispositivos dentro de la red.Los términos importantes a conocer incluyen:</p>   
-      <p>*Tarjeta de interfaz de red (NIC)</p>
-      <p>*Puerto físico</p>
-      <p>*Interfaz</p>    
-    <img src="Presentaciones de Red.png" >   
-    </h2>
-    <h3>Diagramas de topología
+    <p>*Tarjeta de interfaz de red (NIC)</p>
+    <p>*Puerto físico</p>
+    <p>*Interfaz</p>    
+    <img src="Presentaciones de Red.png">   
+
+    <h3 id="diagramas">Diagramas de topología</h3>
     <p>Los diagramas de topología física ilustran la ubicación física de los dispositivos intermedios </p>
-         <img src="Topologia Fisica.png" > 
+    <img src="Topologia Fisica.png"> 
     <p>Los diagramas de topología lógica ilustran dispositivos, puertos y el esquema de direccionamiento de la red.</p>    
-         <img src="Topologia Logica.png" > 
-    </h3>
-    <h2>Tipos
+    <img src="Topologia Logica.png"> 
+
+    <h2 id="tipos">Tipos de redes</h2>
     <h3>Redes de muchos tamaños</h3>
-    </h2>
-     <p>*Las redes domésticas pequeñas conectan algunas computadoras entre sí y con Internet</p>
+    <p>*Las redes domésticas pequeñas conectan algunas computadoras entre sí y con Internet</p>
     <p>*Las oficinas pequeñas y las oficinas en el hogar permiten que una computadora dentro de una oficina
     en el hogar o una oficina remota se conecte a una red corporativa.</p>
     <p>*Las redes medianas a grandes incluyen muchos lugares con cientos o miles de computadoras interconectadas.</p>
     <p>*Redes mundiales: conecta cientos de millones de computadoras en todo el mundo, como Internet</p>
-    
 </body>
 </html>
