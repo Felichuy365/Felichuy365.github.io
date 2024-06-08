@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expo-Kinal</title>
     <style>
+        body {
+    background-image: url('Style/KINAL\ ESCUDO.png');
+    background-size: auto; /* Asegura que la imagen cubra todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Hace que la imagen de fondo permanezca fija al hacer scroll */
+    background-position: center; /* Centra la imagen de fondo */
+    margin: 0; /* Elimina el margen predeterminado del body */
+    font-family: Arial, sans-serif; /* Ejemplo de estilo de fuente */
+    color: white; /* Color de texto blanco para contraste */
+}
+
         h1 {
             color: rgb(32, 32, 198);
             text-align: center;
@@ -13,22 +24,23 @@
             text-decoration-color: red;
         }
         h2 {
-            color: rgba(0, 0, 255, 0.714);
+            color: rgba(32, 32, 198);
             text-decoration: underline;
             text-decoration-color: red;
             text-align: center;
         }
         h3 {
-            color: rgb(0, 204, 255);
+            color: rgb(32, 32, 198);
             text-decoration: underline;
             text-decoration-color: red;
             text-align: center;
         }
         p {
+            color: black;
             text-align: center;
         }
         .table-of-contents {
-            background-color: #fff;
+            background-color: #ffffffc5;
             border: 1px solid #ddd;
             padding: 20px;
             border-radius: 5px;
@@ -60,7 +72,7 @@
     </style>
 </head>
 <body>
-    <img src="picture.png" alt="Logo Kinal" style="float: right;">
+    <img src="Style/picture.png" alt="Logo Kinal" style="float: right;">
     
     <div class="table-of-contents">
         <h2>Contenidos del artículo</h2>
@@ -116,18 +128,18 @@
     <p>Los clientes son equipos que envían solicitudes a los servidores para recuperar información</p>  
     <p>*Página web desde un servidor web.</p>  
     <p>*Correo electrónico desde un servidor de correo electrónico.</p>
-    <img src="Roles Host.png" style="width:388px; height:231px;" alt="Roles Host">
+    <img src="Roles Host.png">
 
     <h3 id="punto-a-punto">Punto a Punto</h3>
     <p>Es posible que un dispositivo sea un cliente y un servidor en una red Punto a Punto. Este tipo
         de diseño de red solo se recomienda para redes muy pequeñas. </p>
-    <img src="Punto a Punto.png" style="width:388px; height:231px;" alt="Punto a Punto">
-    <img src="Ventajas y Desventajas.png" style="width:388px; height:231px;" alt="Ventajas y Desventajas">
+    <img src="Punto a Punto.png">
+    <img src="Ventajas y Desventajas.png">
      
     <h3 id="dispositivos-finales">Dispositivos finales</h3>
     <p>Un terminal es el punto donde un mensaje se origina o se recibe. Los datos se originan con un 
         dispositivo final, fluyen por la red y llegan a un dispositivo final.</p> 
-    <img src="Lan y Internetwork.png" style="width:388px; height:231px;" alt="Lan y Internetwork">
+    <img src="Lan y Internetwork.png">
     
     <h3 id="dispositivos-intermedios">Dispositivos de red intermedios</h3>
     <p>Un dispositivo intermediario interconecta dispositivos finales. Los ejemplos
@@ -137,12 +149,12 @@
     <p>*Volver a generar y transmitir las señales de datos.</p>         
     <p>*Mantener información sobre qué vías existen en la red.</p>         
     <p>*Notificar a otros dispositivos los errores y las fallas de comunicación.</p>         
-    <img src="Dispositivos de red.png" style="width:388px; height:231px;" alt="Dispositivos de red">
+    <img src="Dispositivos de red.png">
     
     <h3 id="medios">Medios</h3>
     <p>La comunicación a través de una red se efectúa a través de un medio que permite que un mensaje viaje desde el origen hacia el destino. </p>
-    <img src="Tipos de medios.png" style="width:388px; height:231px;" alt="Tipos de medios">
-    <img src="cables.png" style="width:388px; height:231px;" alt="cables">
+    <img src="Tipos de medios.png">
+    <img src="cables.png" >
 
     <h2 id="topologias">Topologías</h2>
     <h3 id="representaciones">Representaciones de red</h3>
@@ -151,13 +163,13 @@
     <p>*Tarjeta de interfaz de red (NIC)</p>
     <p>*Puerto físico</p>
     <p>*Interfaz</p>    
-    <img src="Presentaciones de Red.png" style="width:388px; height:231px;" alt="Presentaciones de Red">
+    <img src="Presentaciones de Red.png">   
 
     <h3 id="diagramas">Diagramas de topología</h3>
     <p>Los diagramas de topología física ilustran la ubicación física de los dispositivos intermedios </p>
-    <img src="Topologia Fisica.png" style="width:388px; height:231px;" alt="Topologia Fisica">
+    <img src="Topologia Fisica.png"> 
     <p>Los diagramas de topología lógica ilustran dispositivos, puertos y el esquema de direccionamiento de la red.</p>    
-    <img src="Topologia Logica.png" style="width:388px; height:231px;" alt="Topologia Logica">
+    <img src=Topologia Logica.png"> 
 
     <h2 id="tipos">Tipos de redes</h2>
     <h3>Redes de muchos tamaños</h3>
@@ -186,7 +198,7 @@
     <p>El sistema operativo de PC permite al usuario hacer lo siguiente:
         Utilice un mouse para hacer selecciones y ejecutar programas.
         Introduzca texto y comandos de texto.</p> 
-      <img src="Propósito del Os.png" style="width:388px; height:231px;" alt="Propósito del Os">   
+      <img src="Propósito del Os.png" align-items: center; alt="Propósito del Os">   
     <p>El sistema operativo de red basado en CLI permite a un técnico de red hacer lo siguiente:</p>
     <p>*Utilice un teclado para ejecutar programas de red basados en la CLI.</p>     
     <p>*Utilice un teclado para introducir texto y comandos basados en texto.</p>
