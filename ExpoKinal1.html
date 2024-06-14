@@ -9,14 +9,23 @@
             margin: 0; /* Elimina el margen predeterminado del body */
             font-family: Arial, sans-serif; /* Ejemplo de estilo de fuente */
             color: white; /* Color de texto blanco para contraste */
+            position: relative;
+        }
+
+        /* Fondo con opacidad */
+        .background-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
             background-image: url("IT-ESSENTIALS.jpg");
-            background-size: auto; /* Asegura que la imagen cubra todo el fondo */
+            background-size: cover; /* Asegura que la imagen cubra todo el fondo */
             background-repeat: no-repeat; /* Evita que la imagen se repita */
             background-attachment: fixed; /* Hace que la imagen de fondo permanezca fija al hacer scroll */
-            background-position: left; /* Centra la imagen de fondo */
-            opacity: 0.2; /* Controla la transparencia */
-            z-index: -1; /* Coloca la imagen detrás del contenido */
-            pointer-events: none; /* Hace que la imagen no sea interactiva */
+            background-position: center; /* Centra la imagen de fondo */
+            opacity: 0.5; /* Controla la transparencia */
         }
 
         h1 {
@@ -75,6 +84,8 @@
     </style>
 </head>
 <body>
+    <div class="background-image"></div>
+    
     <img src="picture.png" alt="Logo Kinal" style="float: right;">
     
     <div class="table-of-contents">
